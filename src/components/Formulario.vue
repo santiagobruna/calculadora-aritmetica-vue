@@ -2,7 +2,7 @@
     const props = defineProps(['trocarFiltro', 'primeiroNumero', 'segundoNumero', 'resultado'])
 </script>
 <template>
-    <form>
+    <form class="form p-5 rounded-3">
         <div class="row g-3">
             <div class="col">
                 <input  @change="props.primeiroNumero" type="number" class="form-control" placeholder="Digite o primeiro número" id="primeiroNumero" required>
@@ -19,12 +19,18 @@
                     </select>
                 </div>
         </div>
-        <div class="result mt-4" v-if="props.resultado !== null">
-            <h4>Resultado: {{ props.resultado }}</h4>
+        <div class="mt-4" v-if="props.resultado !== null">
+            <h4 class="result">Resultado: {{ props.resultado }}</h4>
         </div>
     </form>
 </template>
 
 <style scoped>
-
+    
+    .form {
+        background-color: #F0EBE3;
+    }
+    .result{
+        color: #e58497;
+    }
 </style>

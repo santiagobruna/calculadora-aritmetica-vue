@@ -36,11 +36,7 @@
         return getSoma();  
     }
   }
-  // Funçao para limpar os inputs após a operação
-  const limparInputs = () => {
-    estado.primeiroNumero = '';
-    estado.segundoNumero = '';
-  };
+
 </script>
 
 <template>
@@ -54,7 +50,3 @@
       />
   </div>
 </template>
-
-<style scoped>
-
-</style>
